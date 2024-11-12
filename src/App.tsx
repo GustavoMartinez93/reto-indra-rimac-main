@@ -8,7 +8,7 @@ import { UserProvider } from './contexts/UserContext';
 const App = () => {
   return (
     <UserProvider>
-      <Router basename="/reto-indra-rimac-master">
+      <Router basename="/reto-indra-rimac-main">
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/plans" element={<PlansPage />} />
