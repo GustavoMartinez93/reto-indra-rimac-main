@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reto-indra-rimac-main/static/css/main.770f0529.css",
-    "main.js": "/reto-indra-rimac-main/static/js/main.18709bec.js",
+    "main.js": "/reto-indra-rimac-main/static/js/main.c7c0559c.js",
     "static/js/453.51c31b25.chunk.js": "/reto-indra-rimac-main/static/js/453.51c31b25.chunk.js",
     "static/media/frame.svg": "/reto-indra-rimac-main/static/media/frame.169e9f5408287930351544de4f241ab1.svg",
     "static/media/Ic-add-user-light.svg": "/reto-indra-rimac-main/static/media/Ic-add-user-light.554beafb02babf77fecf000a6846c717.svg",
@@ -14,11 +14,11 @@
     "static/media/Icon-button.svg": "/reto-indra-rimac-main/static/media/Icon-button.753d18eb51bbc34abc9fa5cc139a3373.svg",
     "static/media/Icon-line.svg": "/reto-indra-rimac-main/static/media/Icon-line.535e6e244036c163ef205bd5fc309806.svg",
     "main.770f0529.css.map": "/reto-indra-rimac-main/static/css/main.770f0529.css.map",
-    "main.18709bec.js.map": "/reto-indra-rimac-main/static/js/main.18709bec.js.map",
+    "main.c7c0559c.js.map": "/reto-indra-rimac-main/static/js/main.c7c0559c.js.map",
     "453.51c31b25.chunk.js.map": "/reto-indra-rimac-main/static/js/453.51c31b25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.770f0529.css",
-    "static/js/main.18709bec.js"
+    "static/js/main.c7c0559c.js"
   ]
 }
