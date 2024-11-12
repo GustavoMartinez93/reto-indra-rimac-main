@@ -1,0 +1,18 @@
+.header {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    .phone{
+        display: inline;
+        place-items: center;
+        display: flex;
+
+        .buy-text{
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}

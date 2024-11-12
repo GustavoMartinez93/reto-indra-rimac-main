@@ -1,0 +1,116 @@
+.summary {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  
+  
+    .navbar {
+      display: flex;
+      justify-content: center;
+      height: 56px;
+      align-items: center;
+      background-color: #EDEFFC;
+      margin-bottom: 48px;
+  
+      .numberStepSelected {
+          background-color: #4F4FFF;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 3px solid white;
+          
+          p {
+              padding: 4px 8px;
+              margin: 0;
+              color: #ffffff;
+          }
+      }
+  
+      .numberStep {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 1px solid #7981B2;
+          
+          p {
+              padding: 4px 8px;
+              margin: 0;
+              color: #7981B2;
+          }
+      }
+  
+      p {
+          margin: 0 8px;
+          align-content: center;
+          color: #141938;
+      }
+  
+      .line {
+          margin: 0 16px;
+      }
+  }
+  
+    .back-button {
+      background: none;
+      border: none;
+      color: #4F4FFF;
+      font-size: 18px;
+      margin-bottom: 20px;
+      cursor: pointer;
+  
+      span{
+        margin-left: 8px;
+      }
+    }
+  
+    h2 {
+      font-size: 40px;
+    }
+  
+    &__container{
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px auto;
+  
+      h2 {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        color: #333;
+      }
+  
+      &__user-info {
+        color: #555;
+  
+        p {
+          margin: 5px 0;
+        }
+  
+        &__payment-info {
+          background-color: #f9f9f9;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 10px;
+          margin: 15px 0;
+  
+          strong {
+            color: #333;
+          }
+        }
+  
+        &__plan-info {
+          margin-top: 15px;
+  
+          strong {
+            color: #333;
+          }
+  
+          p {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
