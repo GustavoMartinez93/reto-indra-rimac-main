@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getUserData } from '../../api/userApi';
 import styles from './Login.module.scss';
-import Header from '../shared/Header/Header';
+import Header from '../shared/Header/header/Header';
 import Frame from '../../icons/frame.svg';
+import Footer from '../shared/Header/footer/Footer';
 
 const Login = () => {
   const [error, setError] = useState('');
@@ -40,7 +41,8 @@ const Login = () => {
   };
 
   return (
-    <div className={styles['login-page']}>
+    <div>
+      <div className={styles['login-page']}>
         <Header></Header>
         <div className={styles['form-container']}>
         <div className={styles['form-image']}>
@@ -51,54 +53,58 @@ const Login = () => {
             />
         </div>
         <div className={styles['form-content']}>
-          <div className={styles['title-content']}>
-            <div className={styles['subtitle-content']}>
-              <label className={styles['multi']}>Seguro Salud Flexible</label>
-              <h2>Creado para ti y tu familia</h2>
+          <div className={styles['form-wrapper']}>
+            <div className={styles['title-content']}>
+              <div className={styles['subtitle-content']}>
+                <label className={styles['multi']}>Seguro Salud Flexible</label>
+                <h2>Creado para ti y tu familia</h2>
+              </div>
+              <img
+                loading="lazy"
+                src={Frame}
+                alt="Onboarding-mobile"
+              />
             </div>
-            <img
-              loading="lazy"
-              src={Frame}
-              alt="Onboarding-mobile"
-            />
-          </div>
-          
             <div className={styles['description']}>
               <label>Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online.</label>
             </div>
             <form onSubmit={handleSubmit}>
               <div>
-                  <select value={tipoDocumento} onChange={(e) => setTipoDocumento(e.target.value)} >
-                  <option value="DNI">DNI</option>
-                  <option value="Pasaporte">Pasaporte</option>
-                  <option value="Carné de extranjería">Carné de extranjería</option>
+                  <select value={tipoDocumento} onChange={(e) => setTipoDocumento(e.target.value)}>
+                    <option value="DNI">DNI</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Carné de extranjería">Carné de extranjería</option>
                   </select>
-                  <input
-                  type="text"
-                  value={documento}
-                  onChange={(e) => setDocumento(e.target.value)}
-                  required
-                  placeholder='Número de Documento'
-                  />
+                  <div className={styles['floating-mid-input']}>
+                    <input
+                      className={styles['input-mid-border']}
+                      type="number" 
+                      value={documento}
+                      onChange={(e) => setDocumento(e.target.value)}
+                      required
+                    />
+                    <label>Nro. de documento</label>
+                  </div>
               </div>
-              <div>
+              <div className={styles['floating-input']}>
                   <input
-                  type="text"
-                  value={celular}
-                  onChange={(e) => setCelular(e.target.value)}
-                  required
-                  placeholder='Celular'
+                    type="number"
+                    value={celular}
+                    onChange={(e) => setCelular(e.target.value)}
+                    required
                   />
+                  <label>Celular</label>
               </div>
-              <div>
+              <label className={styles['check-input']}>
                   <input
-                  type="checkbox"
-                  checked={aceptoPolitica}
-                  onChange={(e) => setAceptoPolitica(e.target.checked)}
-                  required
+                    type="checkbox"
+                    checked={aceptoPolitica}
+                    onChange={(e) => setAceptoPolitica(e.target.checked)}
+                    required
                   />
+                  <span className={styles['checkmark']}></span>
                   <label>Acepto la Política de Privacidad</label>
-              </div>
+              </label>
               <div>
                   <input
                   type="checkbox"
@@ -114,8 +120,11 @@ const Login = () => {
               {error && <p className={styles.error}>{error}</p>}
               <button type="submit">Cotiza aquí</button>
             </form>
+          </div>
         </div>
         </div>
+      </div>
+      <Footer></Footer>
     </div>
   );
 };

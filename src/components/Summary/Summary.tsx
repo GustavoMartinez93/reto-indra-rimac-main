@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { ReactComponent as MyIcon } from '../../icons/Icon-button.svg';
 import { ReactComponent as FamIcon } from '../../icons/gl_family.svg';
 import { ReactComponent as LineIcon } from '../../icons/Icon-line.svg';
-import Header from '../shared/Header/Header';
+import Header from '../shared/Header/header/Header';
 import styles from './Summary.module.scss';
 
 const Summary = () => {

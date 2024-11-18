@@ -8,7 +8,7 @@ import { ReactComponent as ProtectionIcon } from '../../icons/Ic-protection-ligh
 import { ReactComponent as HomeIcon } from '../../icons/Ic-home-light.svg';
 import { ReactComponent as LineIcon } from '../../icons/Icon-line.svg';
 import { calculateAge } from '../../utils/calculate';
-import Header from '../shared/Header/Header';
+import Header from '../shared/Header/header/Header';
 import styles from './Plans.module.scss';
 
 interface Plan {

@@ -1,9 +1,10 @@
 .login-page{
-    max-width: 1360px;
+    max-width: 1200px;
     padding: 20px;
     margin: auto;
     justify-content: center;
     align-items: center;
+    min-height: 100dvh;
 
     @media only screen and (max-width: 768px) {
       padding: 0;
@@ -14,6 +15,7 @@
   
       .form-image {
         flex: 1;
+
         img {
           display: inline;
           max-width: 100%;
@@ -28,125 +30,270 @@
   
       .form-content {
         flex: 1;
-        padding: 40px 80px;
 
-        .description{
-          border-top: none;
-        }
-
-        @media only screen and (max-width: 768px) {
-          padding: 8px;
+        .form-wrapper{
+          max-width: 352px;
 
           .description{
-            border-top: solid 1px #666;
-            margin: 32px 0;
-            padding-top: 16px;
+            border-top: none;
           }
-        }
-  
-        .title-content{
-          display: flex;
 
-          .subtitle-content{
-            flex: 1;
-            .multi{
-              background-color: #00FF7F;
+          @media only screen and (max-width: 768px) {
+            padding: 8px;
+
+            .description{
+              border-top: solid 1px #666;
+              margin: 32px 0;
+              padding-top: 16px;
             }
           }
-          img{
-            display: none;
-            flex: 1;
-            width: 20%;
-            @media only screen and (max-width: 768px) {
-              display: inline;
-              padding: auto;
-            }
-          }
-        }
-
-        h2 {
-          font-size: 32px;
-          font-weight: 700;
-          line-height: 40px;
-          text-align: left;      
-        }
-  
-        label {
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 20px;
-          letter-spacing: 0.20000000298023224px;
-          text-align: left;
-          margin-bottom: 16px;
-        }
-  
-        form {
-          display: flex;
-          flex-direction: column;
-          margin: 32px 0;
-  
-          div {
-            margin-bottom: 10px;
+    
+          .title-content{
             display: flex;
-            width: 352px; 
+
+            .subtitle-content{
+              flex: 1;
+
+              .multi{
+                background-color: #00FF7F;
+                padding: 4px 8px;
+                border-radius: 4px;
+              }
+            }
+            img{
+              display: none;
+              flex: 1;
+              width: 20%;
+              @media only screen and (max-width: 768px) {
+                display: inline;
+                padding: auto;
+              }
+            }
           }
-  
+
+          h2 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: left;    
+            margin: 20px 0 8px 0;  
+          }
+    
           label {
-            margin-bottom: 5px;
-            color: #666;
             font-size: 14px;
             font-weight: 600;
             line-height: 20px;
             letter-spacing: 0.20000000298023224px;
             text-align: left;
+            margin-bottom: 16px;
           }
-  
-          input[type='text']{
-            width: 352px; 
-            height: 56px;
-            padding: 8px 16px;
-            gap: 8px;
-            border-radius: 0;
-            border: 1px solid #ccc; 
-            opacity: 1;
-          }
-  
-          select {
-            width: 120px;
-            height: 73px;
-            padding: 8px 16px;
-            gap: 8px;
-            border-radius: 0;
-            border: 1px solid #ccc;
-            opacity: 1;
-          }
-  
-          input[type='checkbox'] {
-            margin-right: 10px;
-          }
-  
-          .error {
-            color: red;
-            margin-bottom: 10px;
-          }
+    
+          form {
+            display: flex;
+            flex-direction: column;
+            margin: 16px 0;
 
-          .terms{
-            text-decoration: underline;
-            padding: 16px 0;
-          }
-  
-          button {
-            width: 195px;
-            height: 64px;
-            padding: 10px;
-            background-color: #03050F;
-            color: #fff;
-            border: none;
-            border-radius: 40px;
-            cursor: pointer;
-  
-            &:hover {
-              background-color: #333;
+            .floating-input {
+              position: relative;
+              margin: 16px 0;
+            
+              input {
+                -webkit-appearance: none;
+                -moz-appearance: textfield;
+                width: 100%;
+                padding: 12px 0 0 12px;
+                font-size: 16px;
+                border: 1px solid #5E6488;
+                border-radius: 8px;
+                outline: none;
+            
+                &:focus + label,
+                &:not(:placeholder-shown) + label {
+                  top: 4px;
+                  font-size: 12px;
+                  color: #5E6488;
+                }
+              }
+            
+              label {
+                position: absolute;
+                top: 8px;
+                left: 12px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #999;
+                pointer-events: none;
+                transition: 0.2s ease all;
+              }
+            }
+
+            .floating-mid-input {
+              position: relative;
+              margin: 0;
+            
+              .input-mid-border {
+                -webkit-appearance: none;
+                -moz-appearance: textfield;
+                width: 100%;
+                padding: 12px 0 0 12px;
+                font-size: 16px;
+                border-radius: 0 8px 8px 0;
+                border-top-width: 1px;
+                border-right-width: 1px;
+                border-bottom-width: 1px;
+                border-left-width: 0;
+                border-style: solid;
+                border-color: #5E6488; 
+                outline: none;
+            
+                &:focus + label,
+                &:not(:placeholder-shown) + label {
+                  top: 4px;
+                  font-size: 12px;
+                  color: #5E6488;
+                }
+              }
+            
+              label {
+                position: absolute;
+                top: 8px;
+                left: 12px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #999;
+                pointer-events: none;
+                transition: 0.2s ease all;
+              }
+            }
+
+            .check-input{
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              font-size: 22px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+            .check-input input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+            }
+
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 20px;
+              width: 20px;
+              border: 1px solid #ccc; 
+              border-radius: 4px;
+            }
+
+            /* When the checkbox is checked, add a blue background */
+            .check-input input:checked ~ .checkmark {
+              background-color: #000;
+              border-radius: 4px;
+            }
+
+            .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+            
+            /* Show the checkmark when checked */
+            .check-input input:checked ~ .checkmark:after {
+              display: block;
+            }
+            
+            /* Style the checkmark/indicator */
+            .check-input .checkmark:after {
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+    
+            div {
+              margin-bottom: 10px;
+              display: flex;
+              width: 352px; 
+              height: 56px;
+            }
+    
+            label {
+              margin-bottom: 5px;
+              color: #666;
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 20px;
+              letter-spacing: 0.20000000298023224px;
+              text-align: left;
+            }
+    
+            input[type='text']{
+              width: 352px; 
+              padding: 8px 16px;
+              gap: 8px;
+              border-radius: 8px;
+              border: 1px solid #ccc; 
+              font-size: 16px;
+            }
+    
+            select {
+              width: 120px;
+              height: 56px;
+              padding: 8px 16px;
+              gap: 8px;
+              border-radius: 8px 0 0 8px;
+              border: 1px solid #5E6488;
+              opacity: 1;
+
+              option {
+                font-size: 16px;
+              }
+            }
+    
+            input[type='checkbox'] {
+              margin-right: 10px;
+            }
+    
+            .error {
+              color: red;
+              margin-bottom: 10px;
+            }
+
+            .terms{
+              text-decoration: underline;
+              padding: 16px 0;
+            }
+    
+            button {
+              width: 195px;
+              height: 64px;
+              padding: 10px;
+              background-color: #03050F;
+              color: #fff;
+              border: none;
+              border-radius: 40px;
+              cursor: pointer;
+    
+              &:hover {
+                background-color: #333;
+              }
             }
           }
         }
