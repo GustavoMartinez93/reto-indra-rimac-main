@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/reto-indra-rimac-main/static/css/main.770f0529.css",
-    "main.js": "/reto-indra-rimac-main/static/js/main.c7c0559c.js",
+    "main.css": "/reto-indra-rimac-main/static/css/main.5bb590a0.css",
+    "main.js": "/reto-indra-rimac-main/static/js/main.f8941e96.js",
     "static/js/453.51c31b25.chunk.js": "/reto-indra-rimac-main/static/js/453.51c31b25.chunk.js",
     "static/media/frame.svg": "/reto-indra-rimac-main/static/media/frame.169e9f5408287930351544de4f241ab1.svg",
     "static/media/Ic-add-user-light.svg": "/reto-indra-rimac-main/static/media/Ic-add-user-light.554beafb02babf77fecf000a6846c717.svg",
+    "static/media/Icon-logo-mobile.svg": "/reto-indra-rimac-main/static/media/Icon-logo-mobile.ae0bfc2e96b64bb819000107a242a03b.svg",
+    "static/media/Icon-logo.svg": "/reto-indra-rimac-main/static/media/Icon-logo.a47e826f9b1258ed7406682d19d0a2e9.svg",
     "static/media/Ic-rimac.svg": "/reto-indra-rimac-main/static/media/Ic-rimac.22f08250b4497c24279e42d5ecac6c67.svg",
     "static/media/Ic-protection-light.svg": "/reto-indra-rimac-main/static/media/Ic-protection-light.0e23ab16e35d053e6b2e4ece7b4664f8.svg",
-    "static/media/Ic-home-light.svg": "/reto-indra-rimac-main/static/media/Ic-home-light.955823657d0fba8d55714bd2de442191.svg",
     "static/media/Ic-phone.svg": "/reto-indra-rimac-main/static/media/Ic-phone.cc5774b93288d455308ace58cb530e9b.svg",
     "static/media/gl_family.svg": "/reto-indra-rimac-main/static/media/gl_family.ea7ae3eb80537dfcf115ee868f2d56ea.svg",
+    "static/media/Ic-atoms-radio.svg": "/reto-indra-rimac-main/static/media/Ic-atoms-radio.dc3336c5e87c77b1e1a7da3a9a366cd8.svg",
     "index.html": "/reto-indra-rimac-main/index.html",
+    "static/media/Ic-back.svg": "/reto-indra-rimac-main/static/media/Ic-back.f9a564d5fd456f223d8cffd1ce7c6d72.svg",
     "static/media/Icon-button.svg": "/reto-indra-rimac-main/static/media/Icon-button.753d18eb51bbc34abc9fa5cc139a3373.svg",
     "static/media/Icon-line.svg": "/reto-indra-rimac-main/static/media/Icon-line.535e6e244036c163ef205bd5fc309806.svg",
-    "main.770f0529.css.map": "/reto-indra-rimac-main/static/css/main.770f0529.css.map",
-    "main.c7c0559c.js.map": "/reto-indra-rimac-main/static/js/main.c7c0559c.js.map",
+    "main.5bb590a0.css.map": "/reto-indra-rimac-main/static/css/main.5bb590a0.css.map",
+    "main.f8941e96.js.map": "/reto-indra-rimac-main/static/js/main.f8941e96.js.map",
     "453.51c31b25.chunk.js.map": "/reto-indra-rimac-main/static/js/453.51c31b25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.770f0529.css",
-    "static/js/main.c7c0559c.js"
+    "static/css/main.5bb590a0.css",
+    "static/js/main.f8941e96.js"
   ]
 }
