@@ -1,8 +1,15 @@
 .header {
-    padding-bottom: 40px;
     text-align: center;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 0;
+    }
+
+    svg{
+        align-self: center;
+    }
 
     .phone{
         display: inline;
@@ -10,9 +17,30 @@
         display: flex;
 
         .buy-text{
+            margin-right: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #03050F;
+
             @media only screen and (max-width: 768px) {
                 display: none;
             }
+        }
+
+        .phone-text{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #03050F;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+
         }
     }
 }

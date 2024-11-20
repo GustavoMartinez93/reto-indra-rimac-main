@@ -8,9 +8,9 @@ const Header = () => {
     <header className={styles.header}>
         <RimacIcon></RimacIcon>
         <div className={styles['phone']}>
-            <p className={styles['buy-text']}>Compra por este medio</p>
+            <p className={styles['buy-text']}>¡Compra por este medio!</p>
             <PhoneIcon></PhoneIcon>
-            <p><strong>(01) 411 6001</strong></p>
+            <p className={styles['phone-text']}><strong>(01) 411 6001</strong></p>
         </div>
     </header>
   );
